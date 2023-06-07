@@ -1,9 +1,13 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.all
+    @posts = Post.all
   end
 
   def new
+    @post = Post.new
+  end
+
+  def create
   end
 
   def show
@@ -11,4 +15,5 @@ class PostsController < ApplicationController
 
   def edit
   end
+
 end
